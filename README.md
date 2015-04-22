@@ -19,7 +19,7 @@ Using this unofficial template is not a substitute for learning LaTeX and/or
 understanding its how it works. 
 
 
-Features (needs editing)
+Features (to be updated)
 -------------------
 
 
