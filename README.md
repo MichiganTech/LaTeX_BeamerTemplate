@@ -49,7 +49,7 @@ Which files should one edit?
   3. Place all figures (.jpg, .png, .pdf) in ```Figures``` folder.
 
 
-How does one compile?
+How does one compile? (to be updated)
 -------------------
 
 **Linux (or Mac) from a terminal using the command line, using ```Makefile```:**
@@ -63,8 +63,8 @@ make
 
 ```
 cd LaTeX_BeamerTemplate
-pdflatex john_slides
-pdflatex john_slides
+pdflatex --shell-escape john_slides
+pdflatex --shell-escape john_slides
 ```
 
 **Mac using ```TeXMaker``` application:**
@@ -73,7 +73,7 @@ Navigate to ```TeXMaker » Preferences » Quick Build » Quick Build Command » 
 
 ```
 "/usr/texbin/pdflatex" -interaction=nonstopmode %.tex | 
-"/usr/texbin/latex" -interaction=nonstopmode %.tex
+"/usr/texbin/pdflatex" -interaction=nonstopmode %.tex
 ```
 
 **Windows using ```TeXMaker``` application:**
