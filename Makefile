@@ -19,11 +19,9 @@
 # Michigan Technological University
 # Email: g@mtu.edu
 
-#
 # File suffixes
 .SUFFIXES: .tex .dvi .eps .ps .pdf .jpg .gif
 
-#
 # Basic variables
 SHELL    = /bin/sh
 CP       = cp
@@ -43,12 +41,10 @@ PS2PDF   = ps2pdf
 MAINFILE = $(shell ls *_*.tex | awk -F '.' '{ print $$1}')
 DATETIME = $(shell date +"%Y%m%d_%H%M%S")
 
-#
 # List of class and style files
 # CLASSFILE  = MichiganTechBeamer.cls
 STYLEFILES = MichiganTechBeamer.sty
 
-#
 # List of temporary file types
 TMPFILES = acr \
            alg \
@@ -96,7 +92,6 @@ TMPFILES = acr \
            vrb \
            xdy
 
-#
 # Default target
 all:
 	make clean
