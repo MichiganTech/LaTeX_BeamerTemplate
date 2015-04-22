@@ -176,7 +176,7 @@ Contact the author.
 Author
 -------------------
 
-Gowtham          
+Dr. Gowtham, PhD          
 Director of Research Computing, IT             
 Adj. Asst. Professor, Physics/ECE               
 Michigan Technological University                 
