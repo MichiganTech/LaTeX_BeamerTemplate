@@ -22,6 +22,16 @@ understanding its how it works.
 Features (to be updated)
 -------------------
 
+Apart from modularizing the document preparation process, and producing title
+and final slides, and Michigan Tech logo in every slide, the template provides 
+the following:
+
+  1. If using Linux/UNIX or Mac, the process of generating the PDF could
+     be as simple as typing ```make```.
+
+  2. Ability to make a timestamp-based snapshot of the entire folder via
+     the command ```make snapshot```.
+
 
 What all does one need to get started?
 -------------------
