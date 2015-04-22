@@ -1,9 +1,9 @@
 #
 # Makefile
 # Makefile to systematically compile the john_slides.tex to produce 
-# john_slides.pdf (and clean up temporary files).
+# john_slides_[presentation|distribution].pdf (and clean up temporary files).
 #
-# In order to create the PDF file, just type
+# In order to create the PDF files, just type
 #
 # make 
 #
@@ -41,9 +41,8 @@ PS2PDF   = ps2pdf
 MAINFILE = $(shell ls *_*.tex | awk -F '.' '{ print $$1}')
 DATETIME = $(shell date +"%Y%m%d_%H%M%S")
 
-# List of class and style files
-# CLASSFILE  = MichiganTechBeamer.cls
-STYLEFILES = MichiganTechBeamer.sty
+# Class file
+CLASSFILE = MichiganTech.cls
 
 # List of temporary file types
 TMPFILES = acr \
@@ -103,8 +102,9 @@ presentation:
 	@echo
 	@echo "  Slides for presentation (with animation/transition)"
 	@echo
-	pdflatex --shell-escape $(MAINFILE).tex
-	pdflatex --shell-escape $(MAINFILE).tex
+	$(PDFLATEX) --shell-escape $(MAINFILE).tex
+	$(PDFLATEX) --shell-escape $(MAINFILE).tex
+	$(MV) $(MAINFILE).pdf $(MAINFILE)_presentation.pdf
 	@echo
 	@echo
 
@@ -112,12 +112,12 @@ distribution:
 	@echo
 	@echo "  Slides for distribution (without animation/transition)"
 	@echo
-	sed 's/aspectratio=43/handout,aspectratio=43/g' $(MAINFILE).tex > $(MAINFILE)_distribution.tex
-	pdflatex --shell-escape $(MAINFILE)_distribution.tex
-	pdflatex --shell-escape $(MAINFILE)_distribution.tex
-	mv $(MAINFILE)_distribution.pdf distribution.pdf
-	rm -f $(MAINFILE)_distribution.*
-	mv distribution.pdf $(MAINFILE)_distribution.pdf
+	$(MV) $(CLASSFILE) $(CLASSFILE)_presentation
+	$(SED) 's/aspectratio=43/handout,aspectratio=43/g' $(CLASSFILE)_presentation > $(CLASSFILE)
+	$(PDFLATEX) --shell-escape $(MAINFILE).tex
+	$(PDFLATEX) --shell-escape $(MAINFILE).tex
+	$(MV) $(MAINFILE).pdf $(MAINFILE)_distribution.pdf
+	$(MV) $(CLASSFILE)_presentation $(CLASSFILE)
 	@echo
 	@echo
 
@@ -126,7 +126,7 @@ snapshot:
 	@echo "  Making a snapshot of all files and folders"
 	@echo
 	$(MKDIR) -p Snapshots/$(DATETIME)
-	rsync -a --exclude '*.swp' --exclude '.git' --exclude 'Snapshots' ./ Snapshots/$(DATETIME)/
+	$(RSYNC) -a --exclude '*.swp' --exclude '.git' --exclude 'Snapshots' ./ Snapshots/$(DATETIME)/
 	cd Snapshots/ ; $(ZIP) -qr $(DATETIME).zip $(DATETIME)
 	cd Snapshots/ ; $(RM) -rf $(DATETIME)
 	@echo
@@ -137,6 +137,6 @@ clean:
 	@echo "  Removing temporary files"
 	@echo
 	for tmpfile in $(TMPFILES); do ( $(RM) -f $(MAINFILE).$$tmpfile* ); done
-	rm -f *.gnuplot *.table
+	$(RM) -f *.gnuplot *.table
 	@echo
 	@echo

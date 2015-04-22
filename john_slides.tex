@@ -1,22 +1,9 @@
-\documentclass[aspectratio=43,t]{beamer}
-% \documentclass[handout,aspectratio=43,t]{beamer}
-
-\usepackage{MichiganTechBeamer}
+\documentclass{MichiganTech}
 \usetheme{default}
 
 %
-% Edit this section
-\presentationtitle{Ei mel quas nullam constituto, nam te timeam}
-\presentationdate{24 April 2015}
-\presentername{John D. Sanderson}
-\presentertitle{TITLE}
-\presenterdept{DEPARTMENT}
-\presenteruniv{Michigan Technological University}
-\presenteremail{john@mtu.edu}
-\presenterphone{(906) 487-1885}
-\presenterurl{http://mtu.edu/}
-% Edit this section
-
+% Information for title and final slides, and footers
+\input{Personalize/Personalize}
 
 %
 % Title slide
@@ -67,11 +54,20 @@
 
   \pause
   \vspace*{0.10in}
-  \begin{beamerboxesrounded}[upper=definitionboxhead,lower=definitionboxbody,shadow=true]{Discere dissentiet}
+  \begin{beamerboxesrounded}[upper=questionboxhead,lower=questionboxbody,shadow=true]{Discere dissentiet}
     \begin{flushleft}
       Discere dissentiet vel et, soluta nostrum epicurei ad eam, cu has aperiam
       vituperata. In prima quaeque diceret pri. Enim labores contentiones eos 
       at, duo altera denique nominavi ea, eos inani nominavi consectetuer at.
+    \end{flushleft}
+  \end{beamerboxesrounded}
+
+  \pause
+  \vspace*{0.10in}
+  \begin{beamerboxesrounded}[upper=commandboxhead,lower=commandboxbody,shadow=true]{Commands}
+    \begin{flushleft}
+      \pcommand{make clean}\\
+      \pcommand{make magic}
     \end{flushleft}
   \end{beamerboxesrounded}
 \end{frame}
@@ -110,6 +106,38 @@
   \vspace*{0.10in}
   \begin{reference}{4mm}{84mm}{Black}
     \;
+  \end{reference}
+
+  At qui viderer recusabo aliquando, dignissim, $u_{i}^{n}$ and $u_{i}^{n-1}$,
+  ei his $i$. In prima quaeque diceret pri eos inani, $u_{i}^{n+1}$,
+  voluptaria cu
+  \begin{equation*}
+    \boxed{DodgerBlue}{u_{i}^{n+1} \,=\, 2\,u_{i}^{n} \,-\,
+      u_{i}^{n-1} \,+\, 
+      C^{2}\,\left( u_{i-1}^{n} \,-\, 2\,u_{i}^{n} \,+\, u_{i+1}^{n}\right)}
+  \end{equation*}
+
+  \vspace*{0.10in}
+  $C \,=\, c\,(\Delta\,t/\Delta\,x)$ labores contentiones eos at 
+  (\textsl{Courant numero}).
+
+  \pause
+  \vspace*{0.10in}
+  Eam mazim aliquip cu recusabo pericula accommodare at mea
+  facer affert nonumes qui ea,
+  \boxalign{\begin{align*}
+    u\left(i, t+1\right) \,=\, &\,2\,u\left(i, t\right) \,-\, \\
+                               &\,u\left(i, t-1\right) \,+\, \\
+                               &\,C^{2}\,\left[ u\left(i-1, t\right) \,-\, 2\,u\left(i, t\right) \,+\, u\left(i+1, t\right)\right]
+  \end{align*}}
+\end{frame}
+
+%
+\begin{frame}{Slide title}
+  \vspace*{0.10in}
+  \begin{reference}{4mm}{84mm}{Black}
+    A fantastic collection of TikZ examples: 
+    \href{http://texample.net}{\purl{http;//texample.net}}
   \end{reference}
 
   \begin{figure}
@@ -177,6 +205,40 @@
       \vspace*{0.10in}
     \end{flushleft}
   \end{beamerboxesrounded}
+\end{frame}
+
+%
+\begin{frame}{Slide title}
+  \vspace*{0.10in}
+  \begin{reference}{4mm}{84mm}{Black}
+    A fantastic collection of TikZ examples: 
+    \href{http://texample.net}{\purl{http;//texample.net}}
+  \end{reference}
+
+  \vspace*{0.10in}
+  \centering
+  \tikzstyle{garrow} = [draw, latex'-latex']
+
+  \begin{tikzpicture}
+    \node (proc0) [draw=none, fill=LightSteelBlue, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (0.00,0.00) {\tiny P0};
+    %
+    \node (proc1) [draw=none, fill=GreenYellow!90!Black, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (-4.50,-3.00) {\tiny P1};
+    %
+    \node (proc2) [draw=none, fill=OrangeRed, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (-1.50,-3.00) {\tiny P2};
+    %
+    \node (proc3) [draw=none, fill=GoldenRod, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (1.50,-3.00) {\tiny P3};
+    %
+    \node (proc4) [draw=none, fill=DarkMagenta!30, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (4.50,-3.00) {\tiny P4};
+    %
+    \path [garrow] (proc1.north) -- (proc0.south);
+    \path [garrow] (proc2.north) -- (proc0.south);
+    \path [garrow] (proc3.north) -- (proc0.south);
+    \path [garrow] (proc4.north) -- (proc0.south);
+    %
+    \path [garrow] (proc1.east)  -- (proc2.west);
+    \path [garrow] (proc2.east)  -- (proc3.west);
+    \path [garrow] (proc3.east)  -- (proc4.west);
+  \end{tikzpicture}
 \end{frame}
 
 %
