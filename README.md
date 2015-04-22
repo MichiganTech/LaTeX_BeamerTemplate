@@ -19,7 +19,7 @@ Using this unofficial template is not a substitute for learning LaTeX and/or
 understanding its how it works. 
 
 
-Features (to be updated)
+Features
 -------------------
 
 Apart from modularizing the document preparation process, and producing title
@@ -63,7 +63,7 @@ Which files should one edit?
   5. Update ```MichiganTech.cls``` iff there is a need, and iff there is an understanding of how the LaTeX class/style file works.
 
 
-How does one compile? (to be updated)
+How does one compile? (parts of it to be updated)
 -------------------
 
 **Linux (or Mac) from a terminal using the command line, using ```Makefile```:**
