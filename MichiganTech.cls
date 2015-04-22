@@ -18,7 +18,6 @@
 %
 % Document class (and options) to load
 \LoadClass[aspectratio=43,t]{beamer}
-\usetheme{default}
 
 %
 % Packages
