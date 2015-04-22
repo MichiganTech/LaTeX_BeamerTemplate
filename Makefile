@@ -98,6 +98,7 @@ all:
 	make distribution
 	make clean
 
+# Presentation materail
 presentation:
 	@echo
 	@echo "  Slides for presentation (with animation/transition)"
@@ -108,6 +109,7 @@ presentation:
 	@echo
 	@echo
 
+# Distribution materail
 distribution:
 	@echo
 	@echo "  Slides for distribution (without animation/transition)"
@@ -121,6 +123,7 @@ distribution:
 	@echo
 	@echo
 
+# Snapshot
 snapshot:
 	@echo
 	@echo "  Making a snapshot of all files and folders"
@@ -132,6 +135,7 @@ snapshot:
 	@echo
 	@echo
 
+# Clean up
 clean:
 	@echo
 	@echo "  Removing temporary files"
