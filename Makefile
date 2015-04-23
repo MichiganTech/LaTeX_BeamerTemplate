@@ -31,6 +31,7 @@ AWK      = awk
 SED      = sed
 ZIP      = zip
 MKDIR    = mkdir
+RSYNC    = rsync
 SLEEP    = sleep
 LATEX    = latex
 PDFLATEX = pdflatex
