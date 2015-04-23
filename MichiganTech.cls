@@ -60,7 +60,7 @@
 \RequirePackage{url}
 \RequirePackage{wrapfig}
 \RequirePackage{xcolor}
-\usetikzlibrary{arrows,calc,chains,decorations,decorations.fractals,fadings,fit,intersections,matrix,mindmap,plotmarks,positioning,shapes,shadows,tikzmark,trees}
+\usetikzlibrary{arrows,calc,chains,decorations,decorations.fractals,decorations.pathreplacing,decorations.pathmorphing,fadings,fit,intersections,matrix,mindmap,plotmarks,positioning,shapes,shadows,tikzmark,trees}
 
 \hypersetup{pdfstartview={Fit}}
 \setbeamertemplate{navigation symbols}{}
