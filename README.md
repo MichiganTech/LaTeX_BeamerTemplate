@@ -58,7 +58,7 @@ Which files should one edit?
 
   3. Update ```Personalize/Personalize.tex``` with relevant information.
 
-  4. Place all figures (.jpg, .png, .pdf) in ```Figures``` folder.
+  4. Place all figures (```.jpg```, ```.png```, ```.pdf```) in ```Figures``` folder.
 
   5. Update ```MichiganTech.cls``` iff there is a need, and iff there is an understanding of how the LaTeX class/style file works.
 
