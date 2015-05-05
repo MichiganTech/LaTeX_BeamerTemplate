@@ -184,7 +184,8 @@ The template provides the following 140 named colors (given with their hexadecim
 Got questions? Need help?
 -------------------
 
-Contact the author.
+[Google](http://google.com/) search often provides a quick and reliable answer.
+If all else fails, then contact the author.
 
 
 Author
