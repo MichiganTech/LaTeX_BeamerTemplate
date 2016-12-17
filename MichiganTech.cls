@@ -247,24 +247,16 @@
 
 %
 % Colors coded notations
-\newcommand{\puser}[1]{\textcolor{Brown}{\texttt{#1}}}
-\newcommand{\pemail}[1]{\textcolor{Blue}{\texttt{#1}}}
-\newcommand{\pphone}[1]{\textcolor{Brown}{\textsf{#1}}}
+\newcommand{\puser}[1]{\textcolor{DarkOrchid}{\texttt{#1}}}
+\newcommand{\pemail}[1]{\textcolor{DodgerBlue}{\texttt{#1}}}
+\newcommand{\pphone}[1]{\textcolor{MediumSlateBlue}{\textsf{#1}}}
 \newcommand{\purl}[1]{\textcolor{RoyalBlue}{#1}}
-\newcommand{\pmachine}[1]{\textcolor{RedViolet}{\texttt{#1}}}
-\newcommand{\pprotocol}[1]{\textcolor{Turquoise}{\texttt{#1}}}
-\newcommand{\psoftware}[1]{\textcolor{Black}{\textsf{#1}}}
+\newcommand{\pmachine}[1]{\textcolor{Olive}{\texttt{#1}}}
 \newcommand{\pcode}[1]{\textcolor{Black}{\texttt{#1}}}
 \newcommand{\pcomment}[1]{\textcolor{DarkBlue}{\texttt{#1}}}
 \newcommand{\pcommand}[1]{\textcolor{DarkSlateGray}{\texttt{#1}}}
-\newcommand{\pprompt}[1]{\textcolor{RedOrange}{\texttt{#1}}}
-\newcommand{\presponse}[1]{\textcolor{ForestGreen}{\texttt{#1}}}
-\newcommand{\pfunction}[1]{\textcolor{Orange}{\texttt{#1}}}
-\newcommand{\pfilename}[1]{\textcolor{Black}{\texttt{#1}}}
-\newcommand{\pfilecontent}[1]{\textcolor{MidnightBlue}{\texttt{#1}}}
-\newcommand{\pquestion}[1]{\textcolor{Red}{\textsf{#1}}}
-\newcommand{\psolution}[1]{\textcolor{OliveGreen}{\textsf{#1}}}
-\newcommand{\ppolicy}[1]{\textcolor{Red}{\textsl{#1}}}
+\newcommand{\pfunction}[1]{\textcolor{DarkCyan}{\texttt{#1}}}
+\newcommand{\pfilename}[1]{\textcolor{ForestGreen}{\texttt{#1}}}
 
 %
 % Options for listings
@@ -290,14 +282,30 @@
 
 %
 % Text boxes
+\setbeamercolor{generalnoteboxhead}{fg=White,bg=Yellow!60!Black}
+\setbeamercolor{generalnoteboxbody}{fg=Black,bg=Yellow!5}
+\setbeamercolor{definitionboxhead}{fg=White,bg=RoyalBlue!75!Black}
+\setbeamercolor{definitionboxbody}{fg=Black,bg=RoyalBlue!5}
+\setbeamercolor{triviaboxhead}{fg=White,bg=OliveDrab!75}
+\setbeamercolor{triviaboxbody}{fg=Black,bg=OliveDrab!5}
 \setbeamercolor{brainstormboxhead}{fg=White,bg=Teal!75!Black}
-\setbeamercolor{brainstormboxbody}{fg=black,bg=Teal!5}
-\setbeamercolor{commandboxhead}{fg=White,bg=Gray!75!Black}
-\setbeamercolor{commandboxbody}{fg=black,bg=Gray!5}
-\setbeamercolor{definitionboxhead}{fg=White,bg=DarkSlateBlue!75!Black}
-\setbeamercolor{definitionboxbody}{fg=black,bg=DarkSlateBlue!5}
-\setbeamercolor{questionboxhead}{fg=White,bg=Maroon!75!Black}
-\setbeamercolor{questionboxbody}{fg=black,bg=Maroon!5}
+\setbeamercolor{brainstormboxbody}{fg=Black,bg=Teal!5}
+\setbeamercolor{commandboxhead}{fg=White,bg=Gray!25!Black}
+\setbeamercolor{commandboxbody}{fg=Black,bg=Gray!5}
+\setbeamercolor{reviewboxhead}{fg=White,bg=Violet!50!Black}
+\setbeamercolor{reviewboxbody}{fg=Black,bg=Violet!5}
+\setbeamercolor{doathomeboxhead}{fg=White,bg=Olive!50}
+\setbeamercolor{doathomeboxbody}{fg=Black,bg=Olive!5}
+\setbeamercolor{activepartyboxhead}{fg=White,bg=Olive!50}
+\setbeamercolor{activepartyboxbody}{fg=Black,bg=Olive!5}
+\setbeamercolor{envelopeboxhead}{fg=White,bg=SlateGray!75}
+\setbeamercolor{envelopeboxbody}{fg=Black,bg=SlateGray!5}
+\setbeamercolor{freetimeboxhead}{fg=White,bg=SlateGray!75}
+\setbeamercolor{freetimeboxbody}{fg=Black,bg=SlateGray!5}
+\setbeamercolor{warningboxhead}{fg=White,bg=DarkOrange!75!Black}
+\setbeamercolor{warningboxbody}{fg=Black,bg=DarkOrange!5}
+\setbeamercolor{questionboxhead}{fg=White,bg=FireBrick!75}
+\setbeamercolor{questionboxbody}{fg=Black,bg=FireBrick!5}
 
 %
 % Footnote (must be the first thing in a frame)
