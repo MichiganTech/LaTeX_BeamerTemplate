@@ -26,14 +26,16 @@
 \RequirePackage{amsfonts}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
-\RequirePackage{bookmark}
+\RequirePackage{bohr}
 \RequirePackage[small,bf,up]{caption}
 \RequirePackage{chessboard}
 \RequirePackage{colortbl}
 \RequirePackage{enumerate}
 \RequirePackage{epsfig}
+\RequirePackage{etoolbox}
 \RequirePackage{fancybox}
 \RequirePackage{fancyhdr}
+\RequirePackage{filecontents}
 \RequirePackage[hang,flushmargin,multiple]{footmisc}
 \RequirePackage{framed}
 \RequirePackage{graphicx}
@@ -48,19 +50,47 @@
 \RequirePackage{multirow}
 \RequirePackage[square,comma,sort&compress,numbers]{natbib}
 \RequirePackage{nextpage}
+\RequirePackage{pgffor}
 \RequirePackage{pgfplots}
+\RequirePackage{pgfplotstable}
 \RequirePackage{rotate}
 \RequirePackage{rotating}
 \RequirePackage{setspace}
 \RequirePackage{skak}
+\RequirePackage{smartdiagram}
+\RequirePackage[bf]{subfigure}
 \RequirePackage{tabularx}
 \RequirePackage{textcomp}
 \RequirePackage[absolute,overlay]{textpos}
 \RequirePackage{tikz}
-\RequirePackage{url}
+\RequirePackage[normalem]{ulem}
+\RequirePackage{upquote}
 \RequirePackage{wrapfig}
+\RequirePackage{wasysym}
 \RequirePackage{xcolor}
-\usetikzlibrary{arrows,calc,chains,decorations,decorations.fractals,decorations.pathreplacing,decorations.pathmorphing,fadings,fit,intersections,matrix,mindmap,plotmarks,positioning,shapes,shadows,tikzmark,trees}
+\RequirePackage{empheq}
+\RequirePackage[theorems,skins]{tcolorbox}
+\RequirePackage{url}
+\RequirePackage{bookmark}
+\RequirePackage{hyperref}
+\hypersetup{bookmarksdepth=4,bookmarksnumbered=true,bookmarksopen=true}
+
+\usetikzlibrary{angles,arrows,arrows.meta,calc,chains,decorations,decorations.fractals,decorations.markings,decorations.pathmorphing,decorations.text,fit,fadings,graphs,intersections,lindenmayersystems,matrix,mindmap,patterns,plotmarks,positioning,quotes,shapes,shadings,shadows,svg.path,tikzmark,trees}
+
+% Shape definitions
+\tikzstyle{lineverythin} = [draw, very thin]
+\tikzstyle{linethin}     = [draw, thin]
+\tikzstyle{linethick}    = [draw, thick]
+\tikzstyle{sarrowthin}   = [draw, -latex', thin]
+\tikzstyle{sarrowthick}  = [draw, -latex', thick]
+\tikzstyle{rsarrowthin}  = [draw, latex'-, thin]
+\tikzstyle{rsarrowthick} = [draw, latex'-, thick]
+\tikzstyle{darrowthin}   = [draw, latex'-latex', thin]
+\tikzstyle{darrowthick}  = [draw, latex'-latex', thick]
+
+% Shortcuts
+\newcommand{\bq}{\`\!}
+\newcommand{\sq}{\textquotesingle}
 
 \hypersetup{pdfstartview={Fit}}
 \setbeamertemplate{navigation symbols}{}
@@ -339,14 +369,13 @@
 \setbeamertemplate{footline}{
   \color{gray}
   \rule{\textwidth}{0.10pt}
-  \vskip5pt%
+  \vskip3pt%
   \begin{tabularx}{\textwidth}{XX}
     &
-    \hspace*{\fill}\includegraphics[height=0.25in]{MichiganTechM}\hspace*{0.125in}
+    \hspace*{\fill}\href{http://www.mtu.edu}{\includegraphics[height=0.25in]{MichiganTech}}
   \end{tabularx}
 }
 % Only on title slide
-
 
 %
 % Title slide
@@ -383,10 +412,11 @@
   \setbeamertemplate{footline}{
     \color{gray}
     \rule{\textwidth}{0.10pt}
-    \vskip5pt%
+    \vskip3pt%
     \begin{tabularx}{\textwidth}{XX}
-      \insertframenumber\hfill\phantom{.} &
-      \hspace*{\fill}\includegraphics[height=0.25in]{MichiganTechM}\hspace*{0.125in}
+      \parbox{0.99\linewidth}{\vspace*{-17.50pt}
+        {\tiny \hspace*{0.075in}\expandafter{\@presentername} $\cdot$ Slide \# \insertframenumber\hfill\phantom{.}}} &
+      \hspace*{\fill}\href{http://www.mtu.edu}{\includegraphics[height=0.25in]{MichiganTech}}
     \end{tabularx}
   }
 }
@@ -396,10 +426,10 @@
   \setbeamertemplate{footline}{
     \color{gray}
     \rule{\textwidth}{0.10pt}
-    \vskip5pt%
+    \vskip3pt%
     \begin{tabularx}{\textwidth}{XX}
       &
-      \hspace*{\fill}\includegraphics[height=0.25in]{MichiganTechM}\hspace*{0.125in}
+      \hspace*{\fill}\href{http://www.mtu.edu}{\includegraphics[height=0.25in]{MichiganTech}}
     \end{tabularx}
   }
 

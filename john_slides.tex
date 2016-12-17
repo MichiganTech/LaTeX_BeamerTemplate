@@ -1,27 +1,21 @@
-%
 % john_slides.tex
 % The main LaTeX file, referred to as $(MAINFILE).tex in the Makefile.
 % This must be the ONLY .tex file in the main folder.
 
-%
 % Document class
 \documentclass{MichiganTech}
 
-%
 % Information for title and final slides, and footers
 \input{Personalize/Personalize}
 
-%
 % Title slide
 \titleslide
 
-%
 % Document begins
 \begin{document}
 
 \maketitle
 
-%
 % Non-title slide set up
 \nontitleslidesetup
 
@@ -29,9 +23,9 @@
 % Slides begin (edit the contents below)
 
 %
-\begin{frame}{Outline}
+\begin{frame}[t]{Outline}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     Michigan Tech's website:
     \href{http://www.mtu.edu}{\purl{http://www.mtu.edu}}
   \end{reference}
@@ -46,9 +40,9 @@
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     \;
   \end{reference}
 
@@ -81,13 +75,13 @@
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
   \begin{reference}{108mm}{12mm}{Black}
     \includegraphics[width=0.15\textwidth]{UnknownWoman}\\
     \includegraphics[width=0.15\textwidth]{UnknownMan}
   \end{reference}
-  \begin{reference}{4mm}{82mm}{Black}
+  \begin{reference}{4mm}{83mm}{Black}
     Jill Smith (1903 -- 1992): American mathematician\\
     James Jefferson (1905 -- 1957): Canadian computer scientist
   \end{reference}
@@ -110,9 +104,9 @@
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     \;
   \end{reference}
 
@@ -141,9 +135,9 @@
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     A fantastic collection of TikZ examples: 
     \href{http://texample.net}{\purl{http://texample.net}}
   \end{reference}
@@ -153,64 +147,64 @@
       \path[mindmap,concept color=Black,text=White]
       node[concept] {\begin{equation*}\sum_{i=1}^{N}\,\sum_{j=1}^{M}\,\alpha_{ij}\,\beta_{ji}\,=\,?\end{equation*}}
       [clockwise from=0]
-      child[concept color=RoyalBlue!65!Black] { node[concept] {A1}
+      child[concept color=RoyalBlue!90] { node[concept] {A1}
         [clockwise from=90]
-        child { node[concept] {ABCD} }
-        child { node[concept] {EFGH} }
-        child { node[concept] {IJKL} }
+        child[concept color=RoyalBlue!60] { node[concept] {ABCD} }
+        child[concept color=RoyalBlue!60] { node[concept] {EFGH} }
+        child[concept color=RoyalBlue!60] { node[concept] {IJKL} }
       }
-      child[concept color=OrangeRed!65!Black] { node[concept] {B2}
+      child[concept color=OrangeRed!90] { node[concept] {B2}
         [clockwise from=0]
-        child { node[concept] {TUVWX} }
-        child { node[concept] {YZABC} }
+        child[concept color=OrangeRed!60] { node[concept] {TUVWX} }
+        child[concept color=OrangeRed!60] { node[concept] {YZABC} }
       }
-      child[concept color=DarkGoldenRod!65!Black] { node[concept] {C3}
+      child[concept color=DarkGoldenRod!90] { node[concept] {C3}
         [clockwise from=-45]
-        child { node[concept] {123} }
-        child { node[concept] {789} }
+        child[concept color=DarkGoldenRod!60] { node[concept] {123} }
+        child[concept color=DarkGoldenRod!60] { node[concept] {789} }
       }
-      child[concept color=Plum!65!Black] { node[concept] {D4}
+      child[concept color=Plum!90] { node[concept] {D4}
         [clockwise from=-90]
-        child { node[concept] {$\alpha$} }
-        child { node[concept] {$\beta\,\gamma$} }
-        child { node[concept] {$\pi$} }
-        child { node[concept] {$\eta$} }
+        child[concept color=Plum!60] { node[concept] {$\alpha$} }
+        child[concept color=Plum!60] { node[concept] {$\beta\,\gamma$} }
+        child[concept color=Plum!60] { node[concept] {$\pi$} }
+        child[concept color=Plum!60] { node[concept] {$\eta$} }
       }
-      child[concept color=ForestGreen!65!Black] { node[concept] {$\nabla\,\psi \,=\, \delta\,\phi$}
+      child[concept color=ForestGreen!90] { node[concept] {$\nabla\,\psi \,=\, \delta\,\phi$}
       }
-      child[concept color=LightCoral!65!Black] { node[concept] {\begin{equation*}\int_{0}^{\infty}\,\frac{1}{x}\,dx\end{equation*}}
+      child[concept color=LightCoral!90] { node[concept] {\begin{equation*}\int_{0}^{\infty}\,\frac{1}{x}\,dx\end{equation*}}
       } ;
     \end{tikzpicture}
   \end{figure}
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     A fantastic collection of TikZ examples: 
     \href{http://texample.net}{\purl{http://texample.net}}
   \end{reference}
 
   \begin{center}
     \begin{tikzpicture}[domain=0:4]
-      \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
-      \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
-      \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
-      \draw[color=red] plot[id=x] function{x} 
+      \path[lineverythin,color=Gray] (-0.1,-1.1) grid (3.9,3.9);
+      \path[sarrowthin] (-0.2,0) -- (4.2,0) node[right] {$x$};
+      \path[sarrowthin] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
+      \draw[color=ForestGreen] plot[id=x] function{x} 
         node[right] {$x$};
-      \draw[color=blue] plot[id=sin] function{sin(x)} 
+      \draw[color=DodgerBlue] plot[id=sin] function{sin(x)} 
         node[right] {$\sin x$};
-      \draw[color=orange] plot[id=exp] function{0.05*exp(x)} 
+      \draw[color=OrangeRed] plot[id=exp] function{0.05*exp(x)} 
         node[right] {$\frac{1}{20} \mathrm e^x$};
     \end{tikzpicture}
   \end{center}
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     A fantastic collection of TikZ examples: 
     \href{http://texample.net}{\purl{http://texample.net}}
   \end{reference}
@@ -220,23 +214,23 @@
       \shade[ball color=gray!10!] (0,0) coordinate(Hp) circle (.9) ;
       \shade[ball color=gray!10!] (2,-1.53) coordinate(O) circle (1.62) ;
       \shade[ball color=gray!10!] (4,0) coordinate(Hm) circle (.9) ;
-      \draw[thick,dashed] (0,0) -- (2,-1.53) -- (4,0) ;
-      \draw[thick] (2,.2) -- (2,1.5) node[right]{$\mathbf{p}$} ;
+      \path[linethick,dashed] (0,0) -- (2,-1.53) -- (4,0) ;
+      \path[linethick] (2,.2) -- (2,1.5) node[right]{$\mathbf{p}$} ;
       \draw (2.48,-1.2) arc (33:142:.6)  ;
       \draw (2,-.95) node[above]{$105^{\circ}$} ;
       \draw (0,.2) node[left]{H$^+$} ;
       \draw (4,.2) node[right]{H$^-$} ;
       \draw (2,-1.63) node[below]{O$^{2-}$} ;
       \foreach \point in {O,Hp,Hm}
-        \fill [black] (\point) circle (2pt) ;
+        \fill [Black] (\point) circle (2pt) ;
     \end{tikzpicture}
   \end{center}
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     A fantastic collection of TikZ examples: 
     \href{http://texample.net}{\purl{http://texample.net}}
   \end{reference}
@@ -254,26 +248,26 @@
       }
       ]
       \coordinate (O) at (0,0);
-      \draw[->] (-0.3,0) -- (8,0) coordinate[label = {below:$x$}] (xmax);
-      \draw[->] (0,-0.3) -- (0,5) coordinate[label = {right:$f(x)$}] (ymax);
+      \path[sarrowthin] (-0.3,0) -- (8,0) coordinate[label = {below:$x$}] (xmax);
+      \path[sarrowthin] (0,-0.3) -- (0,5) coordinate[label = {right:$f(x)$}] (ymax);
       \path[name path=x] (0.3,0.5) -- (6.7,4.7);
       \path[name path=y] plot[smooth] coordinates {(-0.3,2) (2,1.5) (4,2.8) (6,5)};
       \scope[name intersections = {of = x and y, name = i}]
-        \fill[gray!20] (i-1) -- (i-2 |- i-1) -- (i-2) -- cycle;
+        \fill[Gray!20] (i-1) -- (i-2 |- i-1) -- (i-2) -- cycle;
         \draw (0.3,0.5) -- (6.7,4.7) node[pos=0.8, below right] {secant};
-        \draw[red] plot[smooth] coordinates {(-0.3,2) (2,1.5) (4,2.8) (6,5)};
+        \draw[OrangeRed] plot[smooth] coordinates {(-0.3,2) (2,1.5) (4,2.8) (6,5)};
         \draw (i-1) node[dot, label = {above:$P$}] (i-1) {} -- node[left]
           {$f(x_0)$} (i-1 |- O) node[dot, label = {below:$x_0$}] {};
         \path (i-2) node[dot, label = {above:$Q$}] (i-2) {} -- (i-2 |- i-1)
           node[dot] (i-12) {};
         \draw (i-12) -- (i-12 |- O) node[dot,
           label = {below:$x_0 + \varepsilon$}] {};
-        \draw[blue, <->] (i-2) -- node[right] {$f(x_0 + \varepsilon) - f(x_0)$}
+        \draw[DodgerBlue, <->] (i-2) -- node[right] {$f(x_0 + \varepsilon) - f(x_0)$}
           (i-12);
-        \draw[blue, <->] (i-1) -- node[below] {$\varepsilon$} (i-12);
+        \draw[DodgerBlue, <->] (i-1) -- node[below] {$\varepsilon$} (i-12);
         \path (i-1 |- O) -- node[below] {$\varepsilon$} (i-2 |- O);
-        \draw[gray] (i-2) -- (i-2 -| xmax);
-        \draw[gray, <->] ([xshift = -0.5cm]i-2 -| xmax) -- node[fill = white]
+        \draw[Gray] (i-2) -- (i-2 -| xmax);
+        \draw[Gray, <->] ([xshift = -0.5cm]i-2 -| xmax) -- node[fill = white]
           {$f(x_0 + \varepsilon)$}  ([xshift = -0.5cm]xmax);
       \endscope
     \end{tikzpicture}
@@ -281,9 +275,9 @@
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     A fantastic collection of TikZ examples: 
     \href{http://texample.net}{\purl{http://texample.net}}
   \end{reference}
@@ -303,32 +297,32 @@
                     amplitude=0.3cm,segment length=2mm}}},
       ]
       % Round rectangle
-      \fill[gray!10,rounded corners] (-4,-3) rectangle (4,0);
+      \fill[Gray!10,rounded corners] (-4,-3) rectangle (4,0);
       % Interface
-      \draw[blue,line width=.5pt,interface](-4,0)--(4,0);
+      \draw[DodgerBlue,line width=.5pt,interface](-4,0)--(4,0);
       % Vertical dashed line
-      \draw[dashed,gray](0,-3)--(0,3);
+      \draw[dashed,Gray](0,-3)--(0,3);
       % Coordinates system
       \draw(0,0.15)node[above]{$x$};
-      \draw[<->,line width=1pt] (1,0) node[above]{$y$}-|(0,-1) node[left]{$z$};
+      \path[darrowthin,line width=1pt] (1,0) node[above]{$y$}-|(0,-1) node[left]{$z$};
       % Incidence
-      \draw[->,wave]
+      \path[sarrowthin,wave]
         (135:3.2cm)--(135:2.5cm)node[right]{$f^0$};
-      \draw[gray](0:0cm)--(135:2cm);
+      \draw[Gray](0:0cm)--(135:2cm);
       \path (0,0)++(113:1cm)node{$\phi$};
-      \draw[->](0,0.75)arc(90:135:.75cm);
+      \path[sarrowthin](0,0.75)arc(90:135:.75cm);
       % Transmission
-      \draw[->,wave]
+      \path[sarrowthin,wave]
         (-30:2.5cm)--(-30:3.2cm)node[right]{$f^+$};
       \draw[gray](0:0cm)--(-30:2cm);
       \path (0,0)++(-60:1cm)node{$\theta$};
-      \draw[->] (0,-0.75) arc (-90:-30:.75cm);
+      \path[sarrowthin] (0,-0.75) arc (-90:-30:.75cm);
       % Reflection
-      \draw[->,wave]
+      \path[sarrowthin,wave]
         (45:2.5cm)--(45:3.2cm)node[right]{$f^-$};
       \path (0,0)++(-22:1.75cm) node{$\psi$};
       \draw[gray](0:0cm)--(45:2cm);
-      \draw[->] (0,-1.5)arc(-90:45:1.5cm);
+      \path[sarrowthin] (0,-1.5)arc(-90:45:1.5cm);
       % Media names
       \path[media] (-3,.6)  node {media 1}
                    (-3,-.6) node {media 2};
@@ -338,12 +332,12 @@
         +(-135:.12cm) -- +(45:.12cm)
         +(-45:.12cm) -- +(135:.12cm);
       % Interface pointer
-      \draw[-latex,thick](3.2,0.5)node[right]{$\mathsf{S_{1,2}}$}
+      \path[sarrowthick](3.2,0.5)node[right]{$\mathsf{S_{1,2}}$}
         to[out=180,in=90] (3,0);
       % To-paths are really useful for drawing curved lines. The above
       % to path is equal to:
       %
-      % \draw[-latex,thick](3.2,0.5)node[right]{$\mathsf{S_{1,2}}$}
+      % \oath[sarrowthick](3.2,0.5)node[right]{$\mathsf{S_{1,2}}$}
       %      ..controls +(180:.2cm) and +(up:0.25cm) .. (3,0);
       % Internally the to path is translated to a similar bezier curve,
       % but the to path syntax hides the complexity from the user. 
@@ -352,9 +346,9 @@
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     \;
   \end{reference}
 
@@ -384,43 +378,41 @@
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     A fantastic collection of TikZ examples: 
     \href{http://texample.net}{\purl{http://texample.net}}
   \end{reference}
 
   \vspace*{0.10in}
   \centering
-  \tikzstyle{garrow} = [draw, latex'-latex']
-
-  \begin{tikzpicture}
-    \node (proc0) [draw=none, fill=LightSteelBlue, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (0.00,0.00) {\tiny P0};
-    %
-    \node (proc1) [draw=none, fill=GreenYellow!90!Black, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (-4.50,-3.00) {\tiny P1};
-    %
-    \node (proc2) [draw=none, fill=OrangeRed, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (-1.50,-3.00) {\tiny P2};
-    %
-    \node (proc3) [draw=none, fill=GoldenRod, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (1.50,-3.00) {\tiny P3};
-    %
-    \node (proc4) [draw=none, fill=DarkMagenta!30, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (4.50,-3.00) {\tiny P4};
-    %
-    \path [garrow] (proc1.north) -- (proc0.south);
-    \path [garrow] (proc2.north) -- (proc0.south);
-    \path [garrow] (proc3.north) -- (proc0.south);
-    \path [garrow] (proc4.north) -- (proc0.south);
-    %
-    \path [garrow] (proc1.east)  -- (proc2.west);
-    \path [garrow] (proc2.east)  -- (proc3.west);
-    \path [garrow] (proc3.east)  -- (proc4.west);
-  \end{tikzpicture}
+    \begin{tikzpicture}
+      \node (proc0) [draw=none, fill=LightSteelBlue, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (0.00,0.00) {\tiny P0};
+      %
+      \node (proc1) [draw=none, fill=GreenYellow!90!Black, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (-4.50,-3.00) {\tiny P1};
+      %
+      \node (proc2) [draw=none, fill=OrangeRed, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (-1.50,-3.00) {\tiny P2};
+      %
+      \node (proc3) [draw=none, fill=GoldenRod, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (1.50,-3.00) {\tiny P3};
+      %
+      \node (proc4) [draw=none, fill=DarkMagenta!30, circle, align=center, inner sep=1.5ex, minimum size=0.50in, font=\sffamily] at (4.50,-3.00) {\tiny P4};
+      %
+      \path [darrowthin] (proc1.north) -- (proc0.south);
+      \path [darrowthin] (proc2.north) -- (proc0.south);
+      \path [darrowthin] (proc3.north) -- (proc0.south);
+      \path [darrowthin] (proc4.north) -- (proc0.south);
+      %
+      \path [darrowthin] (proc1.east)  -- (proc2.west);
+      \path [darrowthin] (proc2.east)  -- (proc3.west);
+      \path [darrowthin] (proc3.east)  -- (proc4.west);
+    \end{tikzpicture}
 \end{frame}
 
 %
-\begin{frame}{Slide title}
+\begin{frame}[t]{Slide title}
   \vspace*{0.10in}
-  \begin{reference}{4mm}{84mm}{Black}
+  \begin{reference}{4mm}{85.5mm}{Black}
     A fantastic collection of TikZ examples: 
     \href{http://texample.net}{\purl{http://texample.net}}
   \end{reference}
@@ -497,7 +489,7 @@
 \end{frame}
 
 %
-\begin{frame}{Thanks be to}
+\begin{frame}[t]{Thanks be to}
   \vspace*{0.10in}
   \begin{reference}{8mm}{75mm}{Black}
     \;
